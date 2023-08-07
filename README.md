@@ -15,7 +15,7 @@ To deploy to Clojars, simply merge
           :exec-fn deps-deploy.deps-deploy/deploy
           :exec-args {:installer :remote
                        :sign-releases? true
-                       :artifact "deps-deploy.jar"}}}
+                       :artifact "deps-deploy.jar"}}} ; or "target/<your-lib>.jar"
 ```
 into your `deps.edn`, have a `pom.xml` handy (you can generate one with `clj -Spom`), and deploy with
 
